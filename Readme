@@ -1,0 +1,14 @@
+IFC Data Loss Detector
+This tool detects data loss (entities, materials, images, properties, and element-level materials) between an original IFC design file and its exported-imported version.
+It checks for missing elements and reports discrepancies in CSV files.
+Prerequisites
+    Python 3.7+ installed.
+    Required Python packages: pip install ifcopenshell
+Files
+    ifc_data_loss_detector.py: The main script.
+    Your original IFC file (e.g., design.ifc).
+How to Run (Step-by-Step)
+    Place your IFC file (e.g., design.ifc) in the working directory (same folder as the script or specify full paths).
+    Open your terminal or command prompt.
+    Run the script with the required arguments: python ifc_data_loss_detector.py --design design.ifc
+Example with all arguments: python ifc_data_loss_detector.py --design design.ifc --exported output/exported.ifc --imported output/imported.ifc --report reports/missing_data_report.csv
